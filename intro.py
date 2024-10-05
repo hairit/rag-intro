@@ -106,12 +106,12 @@ for chunk in chunks:
 
 # Step 5: Execute
 question = "What is the special event occurs in Vietnam in 2024?"
-answer1 = generate_response(question)
-answer2 = generate_response_rag(question=question, relevant_chunks=query_documents(question))
+answerFromLLM = generate_response(question)
+answerFromRAG = generate_response_rag(question=question, relevant_chunks=query_documents(question))
 
 print(f"Answer from LLM:")
-print(answer1)
+print(answerFromLLM)
 print(f"Answer from RAG:")
-print(answer2)
+print(answerFromRAG)
 
 
